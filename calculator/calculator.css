@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    float: left;
+    width: 100%;
+}
+
+.calculator-container {
+    border: solid black 1px;
+    width: 25%;
+    height: 700px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 5%;
+    box-shadow: 0px 5px 30px 5px;
+}
+
+.calculator-screen {
+    margin: auto;
+    margin-top: 50px;
+    background-color: grey;
+    width: 90%;
+    height: 90px;
+    border: solid black 1px;
+    border-radius: 10px;
+}
+
+.screenText {
+    font-size: 40px;
+    font-family: 'Orbitron', sans-serif;
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.calculator-numpad-container {
+    float: left;
+    width: 100%;
+}
+
+.calculator-numpadr1 {
+    width: 100%;
+    float: left
+}
+
+.numberRow-container {
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+
+.calNumbers,
+.calAdd,
+.calSub,
+.calMulti,
+.calDiv,
+.calEqual,
+.calDecimal {
+    width: 80%;
+    height: 100px;
+    margin-top: 30px;
+    font-size: 30px;
+    font-family: 'Orbitron', sans-serif;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./calculator.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="calculator-container">
+            <div class="calculator-screen">
+                <!-- Numbers going in here -->
+                <p class="screenText" id="screenText"></p>
+            </div>
+            <div class="calculator-numpad-container">
+                <div class="calculator-numpadr1">
+                    <div class="calc-number01 numberRow-container">
+                        <button value="1" id="calNumbers1" onclick="screenRender(this.value)"
+                            class="calNumbers calNumbers1">1</button>
+                    </div>
+                    <div class="calc-number02 numberRow-container">
+                        <button value="2" id="calNumbers2" onclick="screenRender(this.value)"
+                            class="calNumbers calNumbers2">2</button>
+                    </div>
+                    <div class="calc-number03 numberRow-container">
+                        <button value="3" id="calNumbers3" onclick="screenRender(this.value)"
+                            class="calNumbers calNumbers3">3</button>
+                    </div>
+                    <div class="calc-additionC numberRow-container">
+                        <button value="+" id="calAdd" onclick="addingNumbers()" class="calAdd">+</button>
+                    </div>
+                </div>
+                <div class="calculator-numpadr2">
+                    <div class="calc-number04 numberRow-container">
+                        <button value="4" id="calNumbers4" onclick="screenRender(this.value)"
+                            class="calNumbers calNumbers4">4</button>
+                    </div>
+                    <div class="calc-number05 numberRow-container">
+                        <button value="5" id="calNumbers5" onclick="screenRender(this.value)"
+                            class="calNumbers calNumbers5">5</button>
+                    </div>
+                    <div class="calc-number06 numberRow-container">
+                        <button value="6" id="calNumbers6" onclick="screenRender(this.value)"
+                            class="calNumbers calNumbers6">6</button>
+                    </div>
+                    <div class="calc-subtraction numberRow-container">
+                        <button value="-" id="calSub" onclick="subtractNumbers()" class="calSub">-</button>
+                    </div>
+                </div>
+                <div class="calculator-numpadr3">
+                    <div class="calc-number07 numberRow-container">
+                        <button value="7" id="calNumbers7" onclick="screenRender(this.value)"
+                            class="calNumbers calNumbers7">7</button>
+                    </div>
+                    <div class="calc-number08 numberRow-container">
+                        <button value="8" id="calNumbers8" onclick="screenRender(this.value)"
+                            class="calNumbers calNumbers8">8</button>
+                    </div>
+                    <div class="calc-number09 numberRow-container">
+                        <button value="9" id="calNumbers9" onclick="screenRender(this.value)"
+                            class="calNumbers calNumbers9">9</button>
+                    </div>
+                    <div class="calc-multiplication numberRow-container">
+                        <button value="*" id="calMulti" onclick="multiplyNumbers()" class="calMulti">*</button>
+                    </div>
+                </div>
+                <div class="calculator-numpadr4">
+                    <div class="cal-number00 numberRow-container">
+                        <button value="0" id="calNumbers0" onclick="screenRender(this.value)"
+                            class="calNumbers calNumbers0">0</button>
+                    </div>
+                    <div class="cal-decimal numberRow-container">
+                        <button value="." id="calDecimal" onclick="screenRender(this.value)" class="calDecimal">.</button>
+                    </div>
+                    <div class="calc-equalsSign numberRow-container">
+                        <button value="=" id="calEqual" onclick="equalNumbers()" class="calEqual">=</button>
+                    </div>
+                    <div class="calc-division numberRow-container">
+                        <button value="/" id="calDiv" onclick="divideNumbers()" class="calDiv">/</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./calculator.js"></script>
+</body>
+
+</html>
